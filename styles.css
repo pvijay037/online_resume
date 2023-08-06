@@ -1,0 +1,88 @@
+
+/* font-family: 'Arvo', serif;
+font-family: 'Cherry Bomb One', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif; */
+body{
+    font-family: 'Arvo', serif;
+	width: 100%;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+
+}
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		font-family: Arial, sans-serif;
+		background-color: white;
+	}
+
+	th,
+	td {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 28px;
+	}
+
+	th {
+		background-color: #009bb7;
+		color: white;
+	}
+
+	tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+
+	caption {
+		font-weight: bold;
+		font-size: 1.2em;
+		margin-bottom: 10px;
+	}
+
+	ul.custom-start {
+		counter-reset: custom-counter;
+		/* Change 6 to the desired starting number */
+	}
+
+	ul.custom-start li {
+		list-style-type: none;
+		position: relative;
+		margin-left: 1.5em;
+	}
+
+	ul.custom-start li::before {
+		content: counter(custom-counter);
+		counter-increment: custom-counter;
+		position: absolute;
+		left: -1.5em;
+	}
+
+
+    .centered-boxs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        background-color: #f2f2f2;
+    }
+    .centered-boxss {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        
+    }
+
+    .cards {
+        width: 500px;
+        /* Adjust the width as needed */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .cards .btns {
+        margin-top: 10px;
+    }
