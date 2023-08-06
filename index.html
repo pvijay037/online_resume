@@ -135,45 +135,64 @@
 				</div><!-- end col -->
 			</div><!-- end row -->
 		</div><!-- end container -->
-		<div id="education">
-			<div class="container">
-				<div class="section-title text-center">
-					<br>
-					<h3>Education</h3>
-					<table class="table table-striped">
-						<thead>
-							<tr style="padding: 28px;">
-								<th scope="col" style="background-color: #009bb7;">Qualification</th>
-								<th scope="col" style="background-color: #009bb7;">College</th>
-								<th scope="col" style="background-color: #009bb7;">Duration</th>
-								<th scope="col" style="background-color: #009bb7;">CGPA</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr style="padding: 28px;">
-								<td>Bachelor of Technology in Computer Science and Engineering</td>
-								<td>Institute of Aeronautical Engineering College, Dundigal, Telangana</td>
-								<td>July 2019 - June 2022</td>
-								<td>7.70</td>
-							</tr>
-							<tr style="padding: 28px;">
-								<td>Diploma in Computer Engineering</td>
-								<td>Teegala Krishna Reddy Engineering College, Meerpet, Telangana</td>
-								<td>July 2016 - May 2019</td>
-								<td>8.50</td>
-							</tr>
-							<tr style="padding: 28px;">
-								<td>Board of Secondary Education, Telangana</td>
-								<td>Pragathi High School, IDPL, Telangana</td>
-								<td>June 2006 - May 2016</td>
-								<td>8.20</td>
-							</tr>
-							<!-- Add your new education entry below -->
-						</tbody>
-					</table>
-				</div>
-			</div><!-- end section wb -->
-		</div>
+		<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <style>
+        @media (max-width: 767px) {
+            /* Adjust font size for mobile screens */
+            .table td,
+            .table th {
+                font-size: 14px; /* You can adjust this value */
+            }
+        }
+    </style>
+</head>
+    <div id="education">
+        <div class="container">
+            <div class="section-title text-center">
+                <br>
+                <h3>Education</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Qualification</th>
+                                <th scope="col">College</th>
+                                <th scope="col">Duration</th>
+                                <th scope="col">CGPA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bachelor of Technology in Computer Science and Engineering</td>
+                                <td>Institute of Aeronautical Engineering College, Dundigal, Telangana</td>
+                                <td>July 2019 - June 2022</td>
+                                <td>7.70</td>
+                            </tr>
+                            <tr>
+                                <td>Diploma in Computer Engineering</td>
+                                <td>Teegala Krishna Reddy Engineering College, Meerpet, Telangana</td>
+                                <td>July 2016 - May 2019</td>
+                                <td>8.50</td>
+                            </tr>
+                            <tr>
+                                <td>Board of Secondary Education, Telangana</td>
+                                <td>Pragathi High School, IDPL, Telangana</td>
+                                <td>June 2006 - May 2016</td>
+                                <td>8.20</td>
+                            </tr>
+                            <!-- Add your new education entry below -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!-- end section wb -->
+    </div>
+
+		
 
 		<div id="experience" class="section lb">
 			<div class="container">
@@ -215,37 +234,49 @@
 		</div>
 	</div>
 	</div>
-	<!-- experience end -->
-	<div id="projects"style="width:98%">
-		<br>
-		<br>
-		<h3 style="text-align: center;">Projects</h3>
-		<br>
-		<div class="row bg-secondary-subtle" style="align-items: center;height: 50vh;">
-			<div class="col-sm-6 mb-3 mb-sm-0">
-				<div class="card">
-					<div class="card-body text-center" style="background-color: #f2f2f2;">
-						<a href="#" class="btn btn-primary project-btn">Apollo Radiology International</a>
-						<p class="card-text">Healthcare organizations generate patient invoices and manage patient
-							information more efficiently, reducing administrative burdens and improving patient
-							satisfaction.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="card">
-					<div class="card-body text-center" style="background-color: #f2f2f2;">
-						<a href="#" class="btn btn-primary project-btn">Opoto Stores Ecommerce</a>
-						<p class="card-text">Developed a fully functional Ecommerce website utilizing Django Rest
-							Framework and React, resulting in a seamless user experience and increased sales
-							conversion rates.</p>
-					</div>
-				</div>
-			</div>
-			<br><br><br>
+	<!-- experience end --><style>
+    @media (max-width: 640px) {
+        .card-text {
+            font-size: 14px; /* You can adjust the font size as needed */
+        }
+        
+        #projects {
+            padding: 20px; /* Add some padding to improve spacing */
+        }
+        
+        .project-card {
+            margin-bottom: 20px; /* Add margin between project cards */
+        }
+    }
+</style>
 
-		</div>
-	</div>
+<div id="projects" style="width: 98%;">
+    <br>
+    <br>
+    <h3 style="text-align: center;">Projects</h3>
+    <br>
+    <div class="row bg-secondary-subtle" style="align-items: center; height: ;">
+        <div class="col-sm-6 mb-3 mb-sm-0 project-card">
+            <div class="card">
+                <div class="card-body text-center" style="background-color: #f2f2f2;">
+                    <a href="#" class="btn btn-primary project-btn">Apollo Radiology International</a>
+                    <p class="card-text">Healthcare organizations generate patient invoices and manage patient information more efficiently, reducing administrative burdens and improving patient satisfaction.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 project-card">
+            <div class="card">
+                <div class="card-body text-center" style="background-color: #f2f2f2;">
+                    <a href="#" class="btn btn-primary project-btn">Opoto Stores Ecommerce</a>
+                    <p class="card-text">Developed a fully functional Ecommerce website utilizing Django Rest Framework and React, resulting in a seamless user experience and increased sales conversion rates.</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+</div>
+
+	
 	<div id="carouselExampleDark" class="carousel carousel-dark slide">
 		<div class="section-title text-center">
 			<br>
